@@ -1,0 +1,71 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    :root {
+    --color-white: #fff;
+    --color-almond: #ecdeca;
+    --color-moonstone: #66a2ad;
+    --color-old-lace: #f9f2e4;
+    --color-paynes-gray: #59696a;
+    --color-dun: #e6caa7;
+    --color-yellow: yellow;
+    --font-roboto: "Roboto", sans-serif;
+    --color-black: #000000;
+    }
+
+    html {
+    font-size: calc(1 * 100vw / 598);
+    }
+
+    body {
+    background: url(../images/assigment-1-desktop-first.png) no-repeat center top /
+        598rem auto;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #292929;
+    font-size: 16rem;
+    }
+
+    a{
+        color: var(--color-white);
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+
+    /* Start Header */
+    header {
+    background-color: var(--color-moonstone);
+    height: 103rem;
+    }
+
+    h1.title-home-page {
+    margin-top: -62rem;
+    color: var(--color-white);
+    font-size: 30rem;
+    margin-left: 203rem;
+    }
+
+    img.julian-img {
+    margin-left: 123rem;
+    width: 58rem;
+    margin-top: 11rem;
+    height: 80rem;
+    }
+
+    nav{
+        margin-top: 43rem;
+        background-color: black;
+        margin-left: -8rem;
+    }
+
+    .nav-bar{
+        display: flex;
+        justify-content: space-around;
+        color: var(--color-white);
+    }
+
+    .font-yellow{
+        color: var(--color-yellow);
+    }
