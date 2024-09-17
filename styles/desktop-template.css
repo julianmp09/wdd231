@@ -22,7 +22,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #292929;
+    color: var(--color-black);
     font-size: 16rem;
     }
 
@@ -73,11 +73,31 @@
     /* Start main */
     main{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1.5fr 1fr;
     }
     /* Start course work */
     .course-work{
         grid-column: 1/2;
+        margin-left: 17rem;
+        margin-top: 49rem;
+        background: bisque;
+        height: 233rem;
+        border-radius: 5rem;
+    }
+
+    .title-container {
+        background-color: red;
+        height: 37rem;
+        margin-top: -25rem;
+        border-radius: 5rem 5rem 0 0;
+    }
+
+    .title-course-work{
+        margin-left: 118rem;
+        font-size: 18rem;
+        margin-top: 25rem;
+        padding-top: 7rem;
+        color: white;
     }
     .list-ul{
         list-style-type: disc;
@@ -87,12 +107,51 @@
     /* Start buenos aires */
 
     .buenos-aires{
-        grid-column: 2/3;
+        grid-column: 2/3;        
+        margin-left: 13rem;
+        margin-top: 48rem;
+        height: 236rem;
+        width: 205rem;
+        border-radius: 5rem;
+        background-color: beige;
     }
 
+    .title-buenos-aires{
+        font-size: 18rem;
+        margin-top: 6rem;
+        margin-left: 10rem;
+        padding-top: 8rem;
+        color: var(--color-white);
+    }
+
+    .title-container-2{
+        background-color: red;
+        margin-top: -6rem;
+        height: 39rem;
+        border-radius: 5rem 5rem 0 0;
+    }
+
+    figcaption {
+        font-size: 12rem;
+        margin-left: 19rem;
+        margin-top: 2rem;
+    }
+
+    .img-buenos-aires{
+        width: 155rem;
+        height: 157rem;
+    }
     /* Start web and programming */
 
     .web-and-computer-programming{
         grid-column: 1/3;
         grid-row: 2/3;
+    }
+
+    .title-web-and-computer {
+        font-size: 18rem;
+        text-align: center;
+        margin-top: 20rem;
+        margin-left: 9rem;
+        color: white;
     }
