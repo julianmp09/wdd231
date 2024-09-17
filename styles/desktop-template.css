@@ -69,3 +69,30 @@
     .font-yellow{
         color: var(--color-yellow);
     }
+
+    /* Start main */
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* Start course work */
+    .course-work{
+        grid-column: 1/2;
+    }
+    .list-ul{
+        list-style-type: disc;
+    }
+
+
+    /* Start buenos aires */
+
+    .buenos-aires{
+        grid-column: 2/3;
+    }
+
+    /* Start web and programming */
+
+    .web-and-computer-programming{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
