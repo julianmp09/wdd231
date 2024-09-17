@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img src="./images/julian-perfil.jpg" alt="julian-perfil" class="julian-img">
+        <img src="./images/julian-perfil.jpg" alt="julian-perfil" class="julian-img" loading="lazy">
         <h1 class="title-home-page">Julian D. Martinez Peñaloza</h1>
         <nav>
             <ul class="nav-bar">
@@ -47,14 +47,16 @@
 
         </section>
         <section class="web-and-computer-programming">
-            <h2 class="title-web-and-computer">Web and Computer Programming Certificate</h2>
+            <div class="title-container-3">
+                <h2 class="title-web-and-computer">Web and Computer Programming Certificate</h2>
+            </div>
             <div class="container-button">
                 <button class="category">All</button>
                 <button class="category">CSE</button>
                 <button class="category">WDD</button>
             </div>
-            <div class="container-button-2">
-                <button class="category-2">CS3 110</button>
+            <div class="container-button-2" id="course">
+                <button class="category-2">CSE 110</button>
                 <button class="category-2">WDD 130</button>
                 <button class="category-2">CSE 111</button>
                 <button class="category-2">CSE 210</button>
@@ -64,8 +66,11 @@
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
-         <p id="lastModified"></p>
-     </footer>    
+        <p class="p-1"">&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
+        <figure>
+            <img src="./images/flag-argentina.jpeg" alt="Argentina-Flag" class="argentina-flag" loading="lazy">
+        </figure>
+        <p id="lastModified" class="p-lastModified"></p>
+    </footer>    
 </body>
 </html>
