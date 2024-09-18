@@ -77,6 +77,37 @@ const courses = [
         completed: false
     }
 ]
+const courseContainer = document.getElementById('course');
+
+function displayCourses(filteredCourses) {
+    courseContainer.innerHTML = ''; // Limpiar el contenedor
+    filteredCourses.forEach(course => {
+        const button = document.createElement('button');
+        button.classList.add('category-2');
+        button.textContent = `${course.subject} ${course.number}`;
+        if (course.completed) {
+            button.classList.add('completed');
+        } else {
+            button.classList.add('not-completed');
+        }
+        courseContainer.appendChild(button);
+    });
+}
+
+function filterCourses(category) {
+    let filteredCourses;
+    if (category === 'CSE') {
+        filteredCourses = courses.filter(course => course.subject === 'CSE');
+    } else if (category === 'WDD') {
+        filteredCourses = courses.filter(course => course.subject === 'WDD');
+    } else {
+        filteredCourses = courses; // Mostrar todos los cursos
+    }
+    displayCourses(filteredCourses);
+}
+
+// Mostrar todos los cursos al cargar la página
+displayCourses(courses);
 
 // Create the global variables
 const year = document.querySelector("#currentyear");

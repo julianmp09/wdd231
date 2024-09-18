@@ -30,11 +30,11 @@
             <div class="title-container">
                 <h2 class="title-course-work">Course Work</h2>
             </div>
-            <ul class="list-ul">
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="list-ul" id="course-list">
             </ul>
+            <div class="total-credits">
+                Total Credits: <span id="total-credits">0</span>
+            </div>
         </section>
         <section class="buenos-aires">
             <div class="title-container-2">
@@ -51,18 +51,13 @@
                 <h2 class="title-web-and-computer">Web and Computer Programming Certificate</h2>
             </div>
             <div class="container-button">
-                <button class="category">All</button>
-                <button class="category">CSE</button>
-                <button class="category">WDD</button>
+                <button class="category" onclick="filterCourses('all')">All</button>
+                <button class="category" onclick="filterCourses('CSE')">CSE</button>
+                <button class="category" onclick="filterCourses('WDD')">WDD</button>
             </div>
             <div class="container-button-2" id="course">
-                <button class="category-2">CSE 110</button>
-                <button class="category-2">WDD 130</button>
-                <button class="category-2">CSE 111</button>
-                <button class="category-2">CSE 210</button>
-                <button class="category-2">WDD 131</button>
-                <button class="category-2">WDD 231</button>
             </div>
+
         </section>
     </main>
     <footer>

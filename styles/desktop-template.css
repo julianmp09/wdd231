@@ -17,9 +17,9 @@
     }
 
     body {
-    background: url(../images/assigment-1-desktop-first.png) no-repeat center top /
-        598rem auto;
-    font-optical-sizing: auto;
+    /* background: url(../images/assigment-1-desktop-first.png) no-repeat center top /
+        598rem auto; */
+    font-optical-sizing: auto; 
     font-weight: 400;
     font-style: normal;
     color: var(--color-black);
@@ -209,6 +209,16 @@
         border-radius: 4rem;
     }
 
+    .completed {
+        background-color: #4CAF50; /* Color verde para cursos completados */
+        color: white;
+    }
+
+    .not-completed {
+        background-color: #f44336; /* Color rojo para cursos no completados */
+        color: white;
+    }
+
     /* start footer */
 
     footer{
@@ -237,3 +247,5 @@
         margin-left: 79rem;
         font-size: 14rem;
     }
+
+    
