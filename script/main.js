@@ -78,8 +78,15 @@ const courses = [
     }
 ]
 const courseContainer = document.getElementById('course');
+const totalCreditsDisplay = document.getElementById('total-credits');
 
-function displayCourses(filteredCourses) {
+// Función para calcular el total de créditos
+const calculateTotalCredits = (courses) => {
+    return courses.reduce((total, course) => total + course.credits, 0);
+}
+
+// Función para mostrar los cursos en el contenedor
+const displayCourses = (filteredCourses) => {
     courseContainer.innerHTML = ''; // Limpiar el contenedor
     filteredCourses.forEach(course => {
         const button = document.createElement('button');
@@ -92,9 +99,14 @@ function displayCourses(filteredCourses) {
         }
         courseContainer.appendChild(button);
     });
+
+    // Mostrar total de créditos
+    const totalCredits = calculateTotalCredits(filteredCourses);
+    totalCreditsDisplay.textContent = totalCredits; // Actualizar el total de créditos en el span
 }
 
-function filterCourses(category) {
+// Función para filtrar los cursos
+const filterCourses = (category) => {
     let filteredCourses;
     if (category === 'CSE') {
         filteredCourses = courses.filter(course => course.subject === 'CSE');
@@ -108,6 +120,9 @@ function filterCourses(category) {
 
 // Mostrar todos los cursos al cargar la página
 displayCourses(courses);
+
+
+// Crear aca dinamicamente la lista de los cursos trabajados
 
 // Create the global variables
 const year = document.querySelector("#currentyear");
