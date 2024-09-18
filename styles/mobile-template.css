@@ -16,14 +16,53 @@
     html {
         font-size: calc(1 * 100vw / 560);
         }
-        
+    
         body {
-        background: url(../images/Assigment-1-mobile-first.png) no-repeat center top /
-            560rem auto;
+        /* background: url(../images/assigment-1-desktop-first.png) no-repeat center top /
+            598rem auto; */
         font-optical-sizing: auto; 
         font-weight: 400;
         font-style: normal;
         color: var(--color-black);
         font-size: 16rem;
         }
+        nav{
+            margin-top: -19rem;
+            background-color: black;
+            margin-left: -8rem;
+            height: 87rem;
+        }
+        .navbar {
+            display: none; /* Ocultar la navbar por defecto */
+        }
+        
+        .navbar.open {
+            display: flex;
+            flex-direction: column;
+        }
+
+  /* small view navigation */
+    #menu {
+        font-size: 17.5rem;
+        border: 0;
+        background: none;
+        color: white;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display:block;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
+
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open li {
+        display: block;
+    }
 }

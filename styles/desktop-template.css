@@ -61,7 +61,7 @@
         height: 34rem;
     }
 
-    .nav-bar{
+    .navbar{
         display: flex;
         justify-content: space-around;
         color: var(--color-white);
@@ -71,7 +71,9 @@
     .font-yellow{
         color: var(--color-yellow);
     }
-
+    #menu{
+        display: none;
+    }
     /* Start main */
     main{
         display: grid;
