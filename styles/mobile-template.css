@@ -45,19 +45,19 @@
         font-size: 16rem;
         }
         nav {
-            position: relative; /* Cambia la posición si es necesario */
+            position: relative; 
             background-color: black;
             height: 20rem;
         }
         .navbar {
-            visibility: hidden; /* Ocultar la navbar por defecto */
-            opacity: 0; /* Hacerla invisible */
-            transition: visibility 0s, opacity 0.5s ease; /* Suavizar la transición */
+            visibility: hidden;
+            opacity: 0; 
+            transition: visibility 0s, opacity 0.5s ease; 
         }
         
         .navbar.open {
-            visibility: visible; /* Hacerla visible */
-            opacity: 1; /* Mostrarla */
+            visibility: visible; 
+            opacity: 1; 
         }
 
   /* small view navigation */

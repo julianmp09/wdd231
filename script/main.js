@@ -93,14 +93,14 @@ hamButton.addEventListener('click', () => {
 const courseContainer = document.getElementById('course');
 const totalCreditsDisplay = document.getElementById('total-credits');
 
-// Función para calcular el total de créditos
+// Function to calculate the total credits
 const calculateTotalCredits = (courses) => {
     return courses.reduce((total, course) => total + course.credits, 0);
 }
 
-// Función para mostrar los cursos en el contenedor
+// Function to display courses in the container
 const displayCourses = (filteredCourses) => {
-    courseContainer.innerHTML = ''; // Limpiar el contenedor
+    courseContainer.innerHTML = ''; // Clean the container
     filteredCourses.forEach(course => {
         const button = document.createElement('button');
         button.classList.add('category-2');
@@ -113,12 +113,12 @@ const displayCourses = (filteredCourses) => {
         courseContainer.appendChild(button);
     });
 
-    // Mostrar total de créditos
+    // Show total credits
     const totalCredits = calculateTotalCredits(filteredCourses);
-    totalCreditsDisplay.textContent = totalCredits; // Actualizar el total de créditos en el span
+    totalCreditsDisplay.textContent = totalCredits; // Update the total credits in the span
 }
 
-// Función para filtrar los cursos
+// Function to filter courses
 const filterCourses = (category) => {
     let filteredCourses;
     if (category === 'CSE') {
@@ -126,16 +126,13 @@ const filterCourses = (category) => {
     } else if (category === 'WDD') {
         filteredCourses = courses.filter(course => course.subject === 'WDD');
     } else {
-        filteredCourses = courses; // Mostrar todos los cursos
+        filteredCourses = courses; // Show all courses
     }
     displayCourses(filteredCourses);
 }
 
-// Mostrar todos los cursos al cargar la página
+// Show all courses on page load
 displayCourses(courses);
-
-
-// Crear aca dinamicamente la lista de los cursos trabajados
 
 // Create the global variables
 const year = document.querySelector("#currentyear");
