@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+--color-white: #fff;
+--color-almond: #ecdeca;
+--color-moonstone: #66a2ad;
+--color-old-lace: #f9f2e4;
+--color-paynes-gray: #59696a;
+--color-dun: #e6caa7;
+--color-yellow: yellow;
+--font-roboto: "Roboto", sans-serif;
+--color-black: #000000;
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: calc(1 * 100vw / 400);
+        }
+    
+        body {
+        background: url(../images/mobile.jpg) no-repeat center top / 400rem auto;    
+        font-optical-sizing: auto; 
+        font-weight: 400;
+        font-style: normal;
+        color: var(--color-black);
+        font-size: 16rem;
+        }
+
+    /* Start header */
+    img.icon {
+        width: 81rem;
+        margin-top: -4rem;
+        margin-left: -42rem;
+    }
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: -128rem;
+        margin-left: 89rem;
+    }
+
+    h1.title-info {
+        margin-top: 30rem;
+    }
+
+    h3.title-chamber {
+        margin-top: -12rem;
+        font-weight: 200;
+        font-size: 17rem;
+    }
+}
+
+

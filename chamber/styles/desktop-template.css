@@ -1,0 +1,62 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    :root {
+    --color-white: #fff;
+    --color-almond: #ecdeca;
+    --color-moonstone: #66a2ad;
+    --color-old-lace: #f9f2e4;
+    --color-paynes-gray: #59696a;
+    --color-dun: #e6caa7;
+    --color-yellow: yellow;
+    --font-roboto: "Roboto", sans-serif;
+    --color-black: #000000;
+    }
+
+    html {
+    font-size: calc(1 * 100vw / 886);
+    }
+
+    body {
+    background: url(../images/desing-desktop.jpg) no-repeat center top / 886rem auto;    
+    font-optical-sizing: auto; 
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-black);
+    font-size: 16rem;
+    }
+    /* Header section */
+    img.icon {
+        width: 45rem;
+        margin-left: 23rem;
+        margin-top: -12rem;
+        border-radius: 8rem;
+    }
+        /* start footer */
+
+        footer{
+            display: grid;
+            grid-template-columns: 0.5fr 2fr 0.5fr;
+            margin-top: 25rem;
+            background-color: var(--color-dun);
+        }
+    
+        img.argentina-flag {
+            width: 70rem;
+            height: 42rem;
+            margin-right: 59rem;
+            margin-top: -8rem;
+        }
+    
+        p.p-1 {
+            grid-column: 2/3;
+            margin-top: 14rem;
+            margin-left: 49rem;
+        }
+        
+        p#lastModified {
+            grid-column: 2/3;
+            margin-top: -37rem;
+            margin-left: 69rem;
+            font-size: 14rem;
+        }
+
