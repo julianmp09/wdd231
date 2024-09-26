@@ -18,7 +18,7 @@
         }
     
         body {
-        background: url(../images/mobile.jpg) no-repeat center top / 400rem auto;    
+        /* background: url(../images/mobile.jpg) no-repeat center top / 400rem auto;     */
         font-optical-sizing: auto; 
         font-weight: 400;
         font-style: normal;
@@ -29,8 +29,9 @@
     /* Start header */
     img.icon {
         width: 81rem;
-        margin-top: -4rem;
-        margin-left: -42rem;
+        margin-left: -28rem;
+        margin-bottom: 19rem;
+        border-radius: 21rem;
     }
     .container-info {
         display: flex;
@@ -40,14 +41,80 @@
     }
 
     h1.title-info {
-        margin-top: 30rem;
+        margin-top: -116rem;
+        margin-left: -116rem;
+    }
     }
 
     h3.title-chamber {
         margin-top: -12rem;
+        margin-left: -120rem;
         font-weight: 200;
         font-size: 17rem;
     }
-}
+
+    nav{
+        background-color: var(--color-moonstone);
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: end;
+        background-color: var(--color-moonstone);
+    }
+
+    #myButton{
+        display: block;
+        font-size: 34rem;
+        background: none;
+        border: none;
+        color: var(--color-black);
+        cursor: pointer;
+        width: 100%;
+        text-align: right;
+        padding: .25rem 2vw;
+        margin-bottom: 61rem;
+    }
+
+    #myButton::before {
+        content: "☰";
+    }
+
+    #myButton.open::before {
+        content: "X";
+    }
+    ul.menu-links li a{
+        display: block;
+        padding: 20rem 2vw;
+        color: var(--color-black);
+        text-decoration: none;
+        font-size: 18rem;
+    }
+
+    li.current-menu-item a{
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    ul.menu-links{
+        display: block;
+        list-style-type: none;
+    }
+
+    /* CSS FOR THE OPEN CLASS */
+
+    nav{
+        display: grid;
+        grid-template-rows: 0fr ;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    nav ul{
+        overflow: hidden;
+    }
+
+    nav.open{
+        grid-template-rows: 1fr;
+    }
 
 

@@ -1,3 +1,14 @@
+// Menu responsive
+const hamburguerElement = document.querySelector("#myButton");
+const navElement = document.querySelector("#animatene");
+
+hamburguerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburguerElement.classList.toggle('open');
+})
+
+
+
 // Create the global variables
 const year = document.querySelector("#currentyear");
 const modified = document.querySelector("#lastModified");

@@ -10,9 +10,10 @@
     <meta name="description" content="creation of chamber page, WDD 231, WebFrontEnd I">
     <meta name="author" content="Julian Martinez">
     <link rel="shortcut icon" href="./images/industrial-favicon.png">
-    <link rel="stylesheet" href="./styles/desktop-template.css">
     <link rel="stylesheet" href="./styles/mobile-template.css">
-    <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/desktop-template.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script defer src="./script/scripts.js"></script>
 </head>
 <body>
     <header>
@@ -23,14 +24,14 @@
             <h1 class="title-info">Domselaar</h1>
             <h3 class="title-chamber">Chamber of Commerce</h3>
         </div>
+        <button id="myButton"></button>
     </header>
-    <nav>
-        <button id="myButton">&#9776</button>
+    <nav id="animatene">
         <ul class="menu-links">
-            <li ><a href="#" class="title">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discover</a></li>
+            <li ><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="#">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
         </ul>
     </nav>
     <!-- <footer>

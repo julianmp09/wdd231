@@ -11,52 +11,81 @@
     --font-roboto: "Roboto", sans-serif;
     --color-black: #000000;
     }
-
-    html {
-    font-size: calc(1 * 100vw / 886);
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
-
-    body {
-    background: url(../images/desing-desktop.jpg) no-repeat center top / 886rem auto;    
-    font-optical-sizing: auto; 
-    font-weight: 400;
-    font-style: normal;
-    color: var(--color-black);
-    font-size: 16rem;
-    }
-    /* Header section */
-    img.icon {
-        width: 45rem;
-        margin-left: 23rem;
-        margin-top: -12rem;
-        border-radius: 8rem;
-    }
-        /* start footer */
-
-        footer{
-            display: grid;
-            grid-template-columns: 0.5fr 2fr 0.5fr;
-            margin-top: 25rem;
-            background-color: var(--color-dun);
-        }
     
-        img.argentina-flag {
-            width: 70rem;
-            height: 42rem;
-            margin-right: 59rem;
-            margin-top: -8rem;
-        }
-    
-        p.p-1 {
-            grid-column: 2/3;
-            margin-top: 14rem;
-            margin-left: 49rem;
-        }
+    @media (min-width: 501px) {
+        html {
+            font-size: calc(1 * 100vw / 886);
+            }
         
-        p#lastModified {
-            grid-column: 2/3;
-            margin-top: -37rem;
-            margin-left: 69rem;
-            font-size: 14rem;
-        }
-
+            body {
+            background: url(../images/desing-desktop.jpg) no-repeat center top / 886rem auto;    
+            font-optical-sizing: auto; 
+            font-weight: 400;
+            font-style: normal;
+            color: var(--color-black);
+            font-size: 16rem;
+            }
+        
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            /* Header section */
+        
+            img.icon {
+                width: 45rem;
+                margin-left: 23rem;
+                margin-top: -12rem;
+                border-radius: 8rem;
+            }
+        
+            img.argentina-flag {
+                width: 70rem;
+                height: 42rem;
+                margin-right: 59rem;
+                margin-top: -8rem;
+            }
+        
+            p.p-1 {
+                grid-column: 2/3;
+                margin-top: 14rem;
+                margin-left: 49rem;
+            }
+            
+            p#lastModified {
+                grid-column: 2/3;
+                margin-top: -37rem;
+                margin-left: 69rem;
+                font-size: 14rem;
+            }
+            
+            #myButton{
+                display: none;
+            }
+        
+            ul.menu-links, ul.menu-links.open{
+                display: flex;
+                justify-content: flex-end;
+            }
+        
+            ul.menu-links a:hover{
+                background-color: rgba(255,255,255,0.2);
+            }
+        
+                /* start footer */
+        
+                footer{
+                    display: grid;
+                    grid-template-columns: 0.5fr 2fr 0.5fr;
+                    margin-top: 25rem;
+                    background-color: var(--color-dun);
+                }
+        
+    }
+    
