@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -78,18 +78,6 @@ const courses = [
     }
 ]
 
-// menu hamburguesa
-// The funtions for hamburger button.
-
-const hamButton = document.querySelector('#menu');
-const navbar = document.querySelector('.navbar');
-
-hamButton.addEventListener('click', () => {
-	navbar.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-
-// 
 const courseContainer = document.getElementById('course');
 const totalCreditsDisplay = document.getElementById('total-credits');
 

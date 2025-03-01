@@ -3,7 +3,7 @@
 :root {
 --color-white: #fff;
 --color-almond: #ecdeca;
---color-moonstone: #66a2ad;
+--color-moonstone: #34495e;
 --color-old-lace: #f9f2e4;
 --color-paynes-gray: #59696a;
 --color-dun: #e6caa7;
@@ -36,60 +36,60 @@
         }
     
         body {
-        /* background: url(../images/assigment-1-desktop-first.png) no-repeat center top /
-            598rem auto; */
         font-optical-sizing: auto; 
         font-weight: 400;
         font-style: normal;
         color: var(--color-black);
         font-size: 16rem;
         }
-        nav {
-            position: relative; 
-            background-color: black;
-            height: 20rem;
-        }
-        .navbar {
-            visibility: hidden;
-            opacity: 0; 
-            transition: visibility 0s, opacity 0.5s ease; 
+        nav{
+            width: 100%;
+            margin-top: -2rem;
         }
         
-        .navbar.open {
-            visibility: visible; 
-            opacity: 1; 
+        nav.hidden {
+            display: none;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #34495e;
+        }
+        
+        nav ul li {
+            margin: 10px 0;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
 
-  /* small view navigation */
-  #menu {
-    font-size: 35.5rem;
-    border: 0;
-    background: none;
-    color: white;
-    position: absolute;
-    top: 19rem;
-    right: 5rem;
-    display: block;
-}
+        .menu-toggle {
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
 
-    #menu::before {
-        content: "☰";
-    }
 
-    #menu.open::before {
-        content: "X";
-    }
-
-    /* when the button is clicked - the open class is toggled (added/removed) */
-    .open li {
-        display: block;
-    }
 
     img.julian-img {
         margin-left: 26rem;
         width: 85rem;
-        margin-top: 21rem;
-        height: 119rem;
+        margin-top: 19rem;
+        height: 101rem;
     }
 
     h1.title-home-page {
@@ -102,7 +102,7 @@
     .course-work {
         grid-column: 1 / 3;
         margin-left: 8rem;
-        margin-top: 80rem;
+        margin-top: 208rem;
         margin-right: 5rem;
         width: 524rem;
         background: var(--color-dun);

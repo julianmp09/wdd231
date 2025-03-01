@@ -3,10 +3,10 @@
     :root {
     --color-white: #fff;
     --color-almond: #ecdeca;
-    --color-moonstone: #66a2ad;
+    --color-moonstone: #34495e;
     --color-old-lace: #f9f2e4;
     --color-paynes-gray: #59696a;
-    --color-dun: #e6caa7;
+    --color-dun:  #fff;
     --color-yellow: yellow;
     --font-roboto: "Roboto", sans-serif;
     --color-black: #000000;
@@ -55,7 +55,7 @@
 
     nav{
         margin-top: 35rem;
-        background-color: var(--color-black);
+        background-color: var(--color-moonstone);
         margin-left: -8rem;
         height: 34rem;
     }
@@ -77,7 +77,7 @@
     .font-yellow:hover{
         color: var(--color-white);
     }
-    #menu{
+    .menu-toggle{
         display: none;
     }
     /* Start main */
@@ -205,7 +205,7 @@
 
     }
     button.category:hover {
-        background-color: var(--color-black);
+        background-color: var(--color-paynes-gray);
         cursor: pointer;
     }
 
@@ -230,16 +230,16 @@
     
     button.category-2:hover {
         cursor: pointer;
-        background-color: var(--color-moonstone);
+        background-color: var(--color-paynes-gray);
     }
 
     .completed {
-        background-color: #4CAF50; /* Color verde para cursos completados */
+        background-color: var(--color-moonstone); 
         color: white;
     }
 
     .not-completed {
-        background-color: #f44336; /* Color rojo para cursos no completados */
+        background-color: var(--color-black); 
         color: white;
     }
 
@@ -254,7 +254,8 @@
         display: grid;
         grid-template-columns: 0.5fr 2fr 0.5fr;
         margin-top: 25rem;
-        background-color: var(--color-dun);
+        background-color: var(--color-moonstone);
+        color: var(--color-white);
     }
 
     img.argentina-flag {
