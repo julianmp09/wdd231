@@ -34,14 +34,18 @@
     html {
         font-size: calc(1 * 100vw / 560);
         }
-    
+        
+        header{
+            height: 167rem;
+        }
+        
         body {
-        font-optical-sizing: auto; 
         font-weight: 400;
         font-style: normal;
         color: var(--color-black);
         font-size: 16rem;
         }
+
         nav{
             width: 100%;
             margin-top: -2rem;

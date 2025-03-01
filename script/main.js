@@ -122,6 +122,18 @@ const filterCourses = (category) => {
 // Show all courses on page load
 displayCourses(courses);
 
+
+// Menu Reposive
+
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('hidden');
+    menuToggle.textContent = nav.classList.contains('hidden') ? '☰' : '✖';
+});
+
+
 // Create the global variables
 const year = document.querySelector("#currentyear");
 const modified = document.querySelector("#lastModified");
