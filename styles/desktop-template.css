@@ -38,11 +38,17 @@
     height: 103rem;
     }
 
-    h1.title-home-page {
+    span.title-home-page {
     margin-top: -62rem;
     color: var(--color-white);
     font-size: 15rem;
-    margin-left: 203rem;
+    }
+
+    h1{
+        margin-top: 45rem;
+        color: var(--color-black);
+        font-size: 15rem;
+        text-align: center;
     }
 
     img.julian-img {
@@ -53,7 +59,7 @@
     }
 
     nav{
-        margin-top: 40rem;
+        margin-top: -10rem;
         background-color: var(--color-moonstone);
         margin-left: -8rem;
         height: 34rem;
@@ -88,7 +94,7 @@
     .course-work{
         grid-column: 1/2;
         margin-left: 17rem;
-        margin-top: 49rem;
+        margin-top: -473rem;
         background:var(--color-dun);
         height: 233rem;
         border-radius: 5rem;
@@ -119,7 +125,7 @@
     .buenos-aires{
         grid-column: 2/3;        
         margin-left: 13rem;
-        margin-top: 48rem;
+        margin-top: -473rem;
         height: 234rem;
         width: 205rem;
         border-radius: 5rem;
@@ -160,7 +166,7 @@
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         background: var(--color-dun);
-        margin-top: 20rem;
+        margin-top: 272rem;
         margin-left: 21rem;
         margin-right: 23rem;
         height: 204rem;
