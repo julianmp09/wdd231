@@ -23,7 +23,11 @@
 
     h1{
         position: relative;
-        bottom: -2rem;
+        margin-bottom: 1rem;
+    }
+
+    .title-logo{
+        margin-top: 2rem;
     }
     
     nav.main-nav {
