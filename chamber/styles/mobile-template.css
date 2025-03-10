@@ -21,9 +21,9 @@ h3{
 
 /*Header Section*/
 
-.title-home{
+/* .title-home{
     text-align: center;
-}
+} */
 
 .domselaar-home{
     width: 500px;
@@ -119,7 +119,7 @@ footer .social-links a {
 
 footer .social-links img {
     width: 30px;
-    height: auto;
+    height: 30px;
 }
 
 /* Styles for the hamburger menu */
@@ -255,7 +255,8 @@ nav.main-nav ul li {
   }
   
   .member-card img {
-    max-width: 100px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 0.5em;
   }
 
