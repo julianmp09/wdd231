@@ -1,120 +1,270 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
---color-white: #fff;
---color-almond: #ecdeca;
---color-moonstone: #66a2ad;
---color-old-lace: #f9f2e4;
---color-paynes-gray: #59696a;
---color-dun: #e6caa7;
---color-yellow: yellow;
---font-roboto: "Roboto", sans-serif;
---color-black: #000000;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (max-width:500px) {
-    html {
-        font-size: calc(1 * 100vw / 400);
-        }
+a{
+    text-decoration: none;
+    color:  #333;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    color: black;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+/*Header Section*/
+
+.title-home{
+    text-align: center;
+}
+
+.domselaar-home{
+    width: 500px;
+    border-radius: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    position: relative;
+    bottom: -1rem;
+}
+
+header .logo{
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .main-nav ul {
+    list-style: none;
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column;
+}
+
+header .main-nav ul li {
+    margin: 10px 0;
+}
+
+header .main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header .main-nav ul li a:hover {
+    background: #575757;
+}
+
+header .hamburger-menu button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: block; /* Visible by default for mobile */
+}
+
+/*Footer Section*/
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-info,
+footer .social-links,
+footer .project-info {
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Styles for the hamburger menu */
+.hamburger-menu button {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    display: block;
+}
+
+.hamburger-menu button::before {
+    content: '☰'; /* Hamburger icon */
+}
+
+.hamburger-menu button.active::before {
+    content: '✖'; /* Cross icon */
+}
+
+/* Default state of the menu (hidden in mobile) */
+nav.main-nav {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+
+/* Visible state of the menu when open */
+nav.main-nav.open {
+    display: block;
+    opacity: 1;
+    max-height: 500px; 
+}
+
+nav.main-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.main-nav ul li {
+    padding: 10px 0;
+}
+
+
+
+/* Directory Section Page*/
+.directory {
+    padding: 2rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#grid-view, #list-view {
+    width: auto;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#grid-view:hover, #list-view:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#members-container.list-view {
+    display: block;
+}
+
+.member {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin: 0.5rem 0;
+}
+
+.member p {
+    margin: 0.25rem 0;
+}
+
+.member .membership {
+    display: inline-block;
+    padding: 0.5rem;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+
+
+/* featured members section */
+.featured-members {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+  }
+  
+  .member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .member-card img {
+    max-width: 100px;
+    margin-bottom: 0.5em;
+  }
+
+
+/* Hover effect (non-mobile) */
+@media (min-width: 768px) {
+    .photo-grid img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
     
-        body {
-        /* background: url(../images/mobile.jpg) no-repeat center top / 400rem auto;     */
-        font-optical-sizing: auto; 
-        font-weight: 400;
-        font-style: normal;
-        color: var(--color-black);
-        font-size: 16rem;
-        }
-
-    /* Start header */
-    img.icon {
-        width: 81rem;
-        margin-left: -28rem;
-        margin-bottom: 19rem;
-        border-radius: 21rem;
-    }
-    .container-info {
-        display: flex;
-        flex-direction: column;
-        margin-top: -128rem;
-        margin-left: 89rem;
-    }
-
-    h1.title-info {
-        margin-top: -116rem;
-        margin-left: -116rem;
-    }
-    }
-
-    h3.title-chamber {
-        margin-top: -12rem;
-        margin-left: -120rem;
-        font-weight: 200;
-        font-size: 17rem;
-    }
-
-    nav{
-        background-color: var(--color-moonstone);
-    }
-
-    header{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        align-items: end;
-        background-color: var(--color-moonstone);
-    }
-
-    #myButton{
-        display: block;
-        font-size: 34rem;
-        background: none;
-        border: none;
-        color: var(--color-black);
-        cursor: pointer;
-        width: 100%;
-        text-align: right;
-        padding: .25rem 2vw;
-        margin-bottom: 61rem;
-    }
-
-    #myButton::before {
-        content: "☰";
-    }
-
-    #myButton.open::before {
-        content: "X";
-    }
-    ul.menu-links li a{
-        display: block;
-        padding: 20rem 2vw;
-        color: var(--color-black);
-        text-decoration: none;
-        font-size: 18rem;
-    }
-
-    li.current-menu-item a{
-        background-color: rgba(0,0,0,0.2);
-    }
-
-    ul.menu-links{
-        display: block;
-        list-style-type: none;
-    }
-
-    /* CSS FOR THE OPEN CLASS */
-
-    nav{
-        display: grid;
-        grid-template-rows: 0fr ;
-        transition: grid-template-rows 0.5s ease-out;
-    }
-
-    nav ul{
-        overflow: hidden;
-    }
-
-    nav.open{
-        grid-template-rows: 1fr;
-    }
-
-
+}

@@ -1,93 +1,58 @@
 [
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Grido Ice Cream Shop",
+        "address": "Manuel Belgrano 153. Domselaar",
+        "phone": "(11) 27291034",
+        "website": "https://argentina.gridohelado.com/",
+        "image": "images/grido.webp",
+        "membership": "Gold"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Moda en Casa",
+        "address": "Manuel Belgrano 152. Domselaar",
+        "phone": "(11) 54871480",
+        "website": "https://julianmp09.github.io/wdd131/project-moda-en-casa/moda-en-casa-home.html",
+        "image": "images/moda-en-casa.webp",
+        "membership": "Silver"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Pastas Artesanales Doña Americana",
+        "address": "Manuel Belgrano 154. Domselaar",
+        "phone": "(11) 57185716",
+        "website": "",
+        "image": "images/PASTA-AMERICANA.webp",
+        "membership": "Bronze"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Axion energy",
+        "address": "Manuel Belgrano 116. Domselaar",
+        "phone": "not available.",
+        "website": "https://www.axionenergy.com/Paginas/index.aspx",
+        "image": "images/Axion.webp",
+        "membership": "Gold"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Alan Regaleria",
+        "address": "9 de Julio 112. Domselaar",
+        "phone": "02223461628",
+        "website": "/",
+        "image": "images/alan-regaleria.webp",
+        "membership": "Bronze"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "Electricidad Domselaar",
+        "address": "Juan B. Justo 134. Domselaar",
+        "phone": "02223671709",
+        "website": "/",
+        "image": "images/Electricidad-Domselaar.webp",
+        "membership": "Bronze"
     },
     {
-        "name": "Grido",
-        "address": "Manuel Belgrano 152",
-        "phoneNumber": "11 2729-1034",
-        "url": "https://www.google.com/maps/place/Grido/@-35.0725765,-58.8185692,10z/data=!4m10!1m2!2m1!1sgrido!3m6!1s0x95a2cd005e48a461:0x7465c3a6264445d7!8m2!3d-35.0725378!4d-58.2912308!15sCgVncmlkbyIDiAEBWgciBWdyaWRvkgEOaWNlX2NyZWFtX3Nob3DgAQA!16s%2Fg%2F11y2x4_2y6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D",
-        "imagen":"../images/grido-domselaar.jpeg",
-        "membership": {
-            "member": "member",
-            "silver": "silver",
-            "gold": "gold"
-        },
-        "description": "renowned ice cream franchise"
+        "name": "ANSES",
+        "address": "9 de Julio 283. Domselaar",
+        "phone": "not available.",
+        "website": "https://www.anses.gob.ar/",
+        "image": "images/anses.webp",
+        "membership": "Bronze"
     }
 ]

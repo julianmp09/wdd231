@@ -3,43 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="./images/Domselaar-home-webp">
-    <meta property="og:title" content="Homepage - The chamber of Commerce of Domselaar">
-    <meta property="og:type" content="website" />
-    <title>The chamber of Commerce of Domselaar</title>
-    <meta name="description" content="creation of chamber page, WDD 231, WebFrontEnd I">
-    <meta name="author" content="Julian Martinez">
-    <link rel="shortcut icon" href="./images/industrial-favicon.png">
-    <link rel="stylesheet" href="./styles/mobile-template.css">
-    <link rel="stylesheet" href="./styles/desktop-template.css">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <script defer src="./script/scripts.js"></script>
+    <meta name="description" content="Directory Chamber of Commerce">
+    <title>Directory Chamber of Commerce</title>
+    <meta name="author" content="Julian D. Martinez Peñaloza">
+    <meta property="og:title" content="Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julianmp09.github.io/wdd230/chamber/images/Domselaar-home.webp">
+    <meta property="og:url" content="https://julianmp09.github.io/wdd230/">
+    <link rel="icon" href="images/industrial-favicon-1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-template.css">
+    <link rel="stylesheet" href="styles/desktop-template.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <figure>
-            <img src="./images/industrial-favicon.png" alt="icon-industrial" loading="lazy" class=" icon">
-        </figure>
-        <div class="container-info">
-            <h1 class="title-info">Domselaar</h1>
-            <h3 class="title-chamber">Chamber of Commerce</h3>
+        <div class="container">
+            <div class="logo">
+                <img src="images/industrial-favicon-1.webp" alt="Domselaar Chamber of Commerce">
+                <h1>Domselaar Chamber of Commerce</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button></button>
+            </div>
         </div>
-        <button id="myButton"></button>
     </header>
-    <nav id="animatene">
-        <ul class="menu-links">
-            <li ><a href="#" title="Home">Home</a></li>
-            <li class="current-menu-item"><a href="#">Directory</a></li>
-            <li><a href="#" title="Join">Join</a></li>
-            <li><a href="#" title="Discover">Discover</a></li>
-        </ul>
-    </nav>
-    <!-- <footer>
-        <p class="p-1">&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
-        <figure>
-            <img src="./images/flag-argentina.jpeg" alt="Argentina-Flag" class="argentina-flag" loading="lazy">
-        </figure>
-        <p id="lastModified" class="p-lastModified"></p>
-    </footer> -->
+    <main>
+        <section class="directory">
+            <h2>Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="members-container" class="grid-view">
+                <!-- Member cards or list items will be populated here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>Domselaar Chamber of Commerce </p>
+            <p>Domselaar, Province of Buenos Aires</p>
+            <p>Email: info@domselaar.org</p>
+            <p>Phone: (11) 1245-6789</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/Threads__app_.webp"></a>
+            <a href="#"><img src="images/Instagram_logo_2022.svg.webp" alt="Instagram"></a>
+            <a href="#"><img src="images/Facebook_logo.webp" alt="LinkedIn"></a>
+        </div>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Julian D. Martinez Peñaloza</p>
+            <p>&copy; <span class="copyright-year">20xx</span> Domselaar Chamber of Commerce</p>
+            <p>Last modified: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+
 </body>
 </html>
