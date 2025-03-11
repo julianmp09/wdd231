@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-almond: #ecdeca;
+    --color-moonstone: #34495e;
+    --color-old-lace: #f9f2e4;
+    --color-paynes-gray: #59696a;
+    --color-dun: #e6caa7;
+    --color-yellow: yellow;
+    --font-roboto: "Roboto", sans-serif;
+    --color-black: #000000;
 }
 
 a{
@@ -32,7 +46,7 @@ h3{
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-roboto);
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -45,7 +59,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: var(--color-moonstone);
     color: #fff;
     padding: 20px 0;
 }
@@ -86,7 +100,7 @@ header .main-nav ul li a {
 }
 
 header .main-nav ul li a:hover {
-    background: #575757;
+    background: var(--color-paynes-gray);
 }
 
 header .hamburger-menu button {
@@ -101,7 +115,7 @@ header .hamburger-menu button {
 /*Footer Section*/
 
 footer {
-    background: #333;
+    background: var(--color-moonstone);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -231,10 +245,10 @@ nav.main-nav ul li {
 .member .membership {
     display: inline-block;
     padding: 0.5rem;
-    background: #007bff;
+    background: #3B4D61;
     color: white;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
 }
 
