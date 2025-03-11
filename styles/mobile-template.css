@@ -2,7 +2,11 @@
 
 :root {
 --color-moonstone: #34495e;
+--color-old-lace: #f9f2e4;
+--color-paynes-gray: #59696a;
+--color-yellow: yellow;
 --font-roboto: "Roboto", sans-serif;
+--color-black: #000000;
 }
 
 @media (max-width:845px) {

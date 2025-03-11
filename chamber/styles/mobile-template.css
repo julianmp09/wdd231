@@ -8,15 +8,8 @@
 }
 
 :root {
-    --color-white: #fff;
-    --color-almond: #ecdeca;
     --color-moonstone: #34495e;
-    --color-old-lace: #f9f2e4;
-    --color-paynes-gray: #59696a;
-    --color-dun: #e6caa7;
-    --color-yellow: yellow;
     --font-roboto: "Roboto", sans-serif;
-    --color-black: #000000;
 }
 
 a{
