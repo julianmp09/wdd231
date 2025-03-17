@@ -26,12 +26,6 @@ h3{
     text-decoration: underline;
 }
 
-/*Header Section*/
-
-/* .title-home{
-    text-align: center;
-} */
-
 .domselaar-home{
     width: 500px;
     border-radius: 20px;
@@ -103,6 +97,86 @@ header .hamburger-menu button {
     font-size: 30px;
     cursor: pointer;
     display: block; /* Visible by default for mobile */
+}
+
+/*Home Page*/
+
+.hero {
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .cta-button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background: #575757;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Column by default for mobile */
+    padding: 20px 0;
+}
+
+.info .events,
+.info .weather,
+.info .forecast {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width by default for mobile */
+    margin-bottom: 20px;
+}
+
+.business-cards {
+    display: flex;
+    flex-direction: column; /* Column by default for mobile */
+    padding: 20px 0;
+}
+
+.business-cards .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width by default for mobile */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.business-cards .card img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.weather {
+    background-color: #f0f8ff;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.weather h2 {
+    margin-bottom: 0.5em;
+}
+
+.forecast-item {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
 /*Footer Section*/
@@ -252,20 +326,20 @@ nav.main-nav ul li {
     background-color: #fff;
     padding: 1em;
     border-radius: 8px;
-  }
-  
-  .member-card {
+}
+
+.member-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1em;
     margin-bottom: 1em;
-  }
-  
-  .member-card img {
+}
+
+.member-card img {
     width: 100px;
     height: 100px;
     margin-bottom: 0.5em;
-  }
+}
 
 
 /* Hover effect (non-mobile) */

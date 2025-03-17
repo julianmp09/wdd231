@@ -29,7 +29,34 @@
     .title-logo{
         margin-top: 2rem;
     }
-    
+
+    /*Home Page*/
+    .info {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .info .events,
+    .info .weather,
+    .info .forecast {
+        width: 30%; 
+    }
+
+    .business-cards {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .business-cards .card {
+        width: 30%; 
+    }
+
+    .weather, .forecast{
+        text-align: center;
+    }
+
+    /*end home page*/
+
     nav.main-nav {
         display: block;
         opacity: 1;
