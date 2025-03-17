@@ -26,6 +26,11 @@ h3{
     text-decoration: underline;
 }
 
+.title-home{
+    text-align: center;
+}
+
+
 .domselaar-home{
     width: 500px;
     border-radius: 20px;
