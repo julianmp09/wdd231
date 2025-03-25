@@ -75,6 +75,13 @@
         display: none;
     }
 
+    /*Join page*/
+
+    .join-us {
+        grid-template-columns: 2fr 1fr; 
+        align-items: flex-start;
+    }
+
     footer{
         display: flex;
         justify-content: space-around;

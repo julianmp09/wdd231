@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domsealaar Chamber of Commerce">
+    <title>Join Chamber of Commerce</title>
+    <meta name="author" content="Julian D. Martinez Peñaloza">
+    <meta property="og:title" content="Join Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julianmp09.github.io/wdd231/chamber/images/industrial-favicon-1.webp">
+    <meta property="og:url" content="https://julianmp09.github.io/wdd231/chamber/join">
+    <link rel="icon" href="images/industrial-favicon-1.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-template.css">
+    <link rel="stylesheet" href="styles/desktop-template.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/joinForm.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/industrial-favicon-1.webp" alt="Domselaar Chamber of Commerce">
+                <h2 class="title-logo">Domselaar Chamber of Commerce</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="join-us">
+            <div class="form-container">
+                <h2>Join the Chamber</h2>
+                <form action="thankyou.html" method="get">
+                    <!-- Applicant First Name -->
+                    <label for="first-name">First Name (required):
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+
+                    <!-- Applicant Last Name -->
+                    <label for="last-name">Last Name (required):
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+
+                    <!-- Job Title -->
+                    <label for="job-title">Job Title (only letters, hyphens, spaces, min 7 characters):
+                        <input type="text" id="job-title" name="job-title" pattern="[a-zA-Z\-\s]{7,}" required>
+                    </label>
+
+                    <!-- Email Address -->
+                    <label for="email">Email (required):
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <!-- Phone Number -->
+                    <label for="phone">Mobile Phone (required):
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+
+                    <!-- Company/Organization Name -->
+                    <label for="company">Company/Organization Name (required):
+                        <input type="text" id="company" name="company" required>
+                    </label>
+
+                    <!-- Membership Level -->
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" name="membership" value="NP" required> Non-Profit (Free)</label>
+                        <label><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                        <label><input type="radio" name="membership" value="Silver"> Silver</label>
+                        <label><input type="radio" name="membership" value="Gold"> Gold</label>
+                    </fieldset>
+
+                    <!-- Company Description -->
+                    <label for="description">Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+
+                    <!-- Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <aside class="membership-benefits">
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li><strong>Non-Profit:</strong> Community events and networking.</li>
+                    <li><strong>Bronze:</strong> All NP benefits + Free basic training.</li>
+                    <li><strong>Silver:</strong> All Bronze benefits + Advertising opportunities.</li>
+                    <li><strong>Gold:</strong> All Silver benefits + Exclusive VIP events.</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>Domselaar Chamber of Commerce </p>
+            <p>Domselaar, Province of Buenos Aires</p>
+            <p>Email: info@domselaar.org</p>
+            <p>Phone: (11) 1245-6789</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/Threads__app_.webp" alt="Threads"  loading="lazy"></a>
+            <a href="#"><img src="images/Instagram_logo_2022.svg_11zon.webp" alt="Instagram" loading="lazy"></a>
+            <a href="#"><img src="images/Facebook_logo.webp" alt="Facebook" loading="lazy"></a>
+        </div>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Julian D. Martinez Peñaloza</p>
+            <p>&copy; <span class="copyright-year">20xx</span> Domselaar Chamber of Commerce</p>
+            <p>Last modified: <span id="last-modification"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
