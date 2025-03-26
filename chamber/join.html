@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="styles/mobile-template.css">
     <link rel="stylesheet" href="styles/desktop-template.css">
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/getDates.js" defer></script>
-    <script src="scripts/joinForm.js" defer></script>
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+    <script src="scripts/membership-benefits.js" defer></script>
 </head>
 <body>
     <header>
@@ -98,10 +99,50 @@
             <aside class="membership-benefits">
                 <h3>Membership Benefits</h3>
                 <ul>
-                    <li><strong>Non-Profit:</strong> Community events and networking.</li>
-                    <li><strong>Bronze:</strong> All NP benefits + Free basic training.</li>
-                    <li><strong>Silver:</strong> All Bronze benefits + Advertising opportunities.</li>
-                    <li><strong>Gold:</strong> All Silver benefits + Exclusive VIP events.</li>
+                    <li>
+                        <strong>Non-Profit:</strong> Community events and networking.
+                        <button class="modal-button" data-modal="modal-np">More Info</button>
+                        <div id="modal-np" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="modal-np">&times;</span>
+                                <h4>Non-Profit Membership</h4>
+                                <p>Enjoy community events and expand your network with like-minded individuals.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Bronze:</strong> All NP benefits + Free basic training.
+                        <button class="modal-button" data-modal="modal-bronze">More Info</button>
+                        <div id="modal-bronze" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="modal-bronze">&times;</span>
+                                <h4>Bronze Membership</h4>
+                                <p>Includes all Non-Profit benefits plus access to free basic training.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Silver:</strong> All Bronze benefits + Advertising opportunities.
+                        <button class="modal-button" data-modal="modal-silver">More Info</button>
+                        <div id="modal-silver" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="modal-silver">&times;</span>
+                                <h4>Silver Membership</h4>
+                                <p>Enjoy all Bronze benefits plus exclusive advertising opportunities.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Gold:</strong> All Silver benefits + Exclusive VIP events.
+                        <button class="modal-button" data-modal="modal-gold">More Info</button>
+                        <div id="modal-gold" class="modal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="modal-gold">&times;</span>
+                                <h4>Gold Membership</h4>
+                                <p>Includes all Silver benefits plus access to exclusive VIP events.</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </aside>
         </section>
