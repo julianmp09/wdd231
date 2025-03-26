@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-moonstone: #34495e;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:  #333;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    color: black;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.title-home{
+    text-align: center;
+}
+
+
+.women-dancing{
+    width: 300px;
+}
+
+
+body {
+    font-family: var(--font-poppins);
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: white;
+    color: black;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 22px;
+    position: relative;
+    bottom: -8px;
+}
+
+header .logo{
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .main-nav ul {
+    list-style: none;
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column;
+}
+
+header .main-nav ul li {
+    margin: 10px 0;
+}
+
+header .main-nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header .hamburger-menu button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    display: block; /* Visible by default for mobile */
+}
+
+/*Home Page*/
+
+.hero {
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1rem;
+}
+
+.hero .cta-button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background: #575757;
+}
+
+/* section brands */
+.brands{
+    background-color: #E6C744;
+}
+
+.flex-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 10px;
+    mix-blend-mode: multiply;  /* mix-blend-mode: multiply; causes the white in the image to become transparent when combined with the dark background. */
+}
+
+.flex-img > img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 1; /* Adjusts the minimum size of the elements */
+    object-fit: contain; /* maintains the proportion of the images*/
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Column by default for mobile */
+    padding: 20px 0;
+}
+
+.info .weather{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width by default for mobile */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img-cards{
+    width: 100%;
+    height: 600px;
+}
+
+/* Comienzo de la section community */
+.community{
+    height: 600px;
+    background-color: #E6C744;
+    padding: 6rem;
+}
+
+.community-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    gap: 1rem;
+}
+
+.community-title{
+    text-align: center;
+    font-size: 55px;
+}
+
+.community-subtitle{
+    font-weight: normal;
+}
+.cta-button{
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.weather {
+    background-color: #f0f8ff;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.weather h2 {
+    margin-bottom: 0.5em;
+}
+
+
+
+/*Footer Section*/
+
+footer {
+    background: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-info,
+footer .social-links,
+footer .project-info {
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styles for the hamburger menu */
+.hamburger-menu button {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+    display: block;
+}
+
+.hamburger-menu button::before {
+    content: '☰'; /* Hamburger icon */
+}
+
+.hamburger-menu button.active::before {
+    content: '✖'; /* Cross icon */
+}
+
+/* Default state of the menu (hidden in mobile) */
+nav.main-nav {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+
+/* Visible state of the menu when open */
+nav.main-nav.open {
+    display: block;
+    opacity: 1;
+    max-height: 500px; 
+}
+
+nav.main-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.main-nav ul li {
+    padding: 10px 0;
+}
+
+
+
+/* Directory Section Page*/
+.directory {
+    padding: 2rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#grid-view, #list-view {
+    width: auto;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#grid-view:hover, #list-view:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#members-container.list-view {
+    display: block;
+}
+
+.member {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin: 0.5rem 0;
+}
+
+.member p {
+    margin: 0.25rem 0;
+}
+
+.member .membership {
+    display: inline-block;
+    padding: 0.5rem;
+    background: #3B4D61;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+
+/* featured members section */
+.featured-members {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5em;
+}
+
+/* join styles */
+
+.join-us {
+    display: grid;
+    grid-template-columns: 1fr; /* One column by default */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* form container */
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #444;
+}
+
+/*  Styles for labels and form fields */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+form input,
+form textarea,
+form button,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color:#34495e;
+    transform: translateY(-2px);
+}
+
+/* membership-benefits */
+.membership-benefits {
+    background: linear-gradient(135deg, #f7f7f7, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-benefits h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.membership-benefits ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered delay for each level */
+.membership-benefits ul li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.membership-benefits ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.membership-benefits ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.membership-benefits ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.membership-benefits ul li::before {
+    content: "✔";
+    color: #444;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-2px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 10% auto;
+    text-align: center;
+}
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.membership-benefits .modal-button {
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.membership-benefits .modal-button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex; /* Show the modal */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.modal-button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.thank-you-container .container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.thank-you-container .thank-you-message h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.thank-you-container .thank-you-message p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.thank-you-container .thank-you-message a.button {
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.thank-you-container .thank-you-message a.button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container ul li {
+    font-size: 1rem;
+    color: #333;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.thank-you-container ul li:last-child {
+    border-bottom: none;
+}
+
+.thank-you-container ul li {
+    color: black;
+}
+
+.thank-you-container .thank-you-message #user-name {
+    color: black;
+    font-weight: bold;
+}
+
+.thank-you-container .thank-you-message .button {
+    margin-top: 15px;
+}
+
+
+
+/* Hover effect (non-mobile) */
+@media (min-width: 768px) {
+    .photo-grid img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    
+}
