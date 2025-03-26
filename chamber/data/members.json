@@ -20,7 +20,7 @@
         "address": "Manuel Belgrano 154. Domselaar",
         "phone": "(11) 57185716",
         "website": "",
-        "image": "images/PASTA-AMERICANA.webp",
+        "image": "images/pasta_americana.webp",
         "membership": "Bronze"
     },
     {
@@ -28,7 +28,7 @@
         "address": "Manuel Belgrano 116. Domselaar",
         "phone": "not available.",
         "website": "https://www.axionenergy.com/Paginas/index.aspx",
-        "image": "images/Axion.webp",
+        "image": "images/axion.webp",
         "membership": "Gold"
     },
     {
@@ -44,7 +44,7 @@
         "address": "Juan B. Justo 134. Domselaar",
         "phone": "02223671709",
         "website": "/",
-        "image": "images/Electricidad-Domselaar.webp",
+        "image": "images/electricidad_domselaar.webp",
         "membership": "Bronze"
     },
     {
