@@ -1,29 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const modalButtons = document.querySelectorAll(".modal-button");
-    const modals = document.querySelectorAll(".modal");
-    const closeButtons = document.querySelectorAll(".close-modal");
+// Wait for the DOM to load before running the script
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all the modal buttons
+    const modalButtons = document.querySelectorAll('.modal-button');
+    
+    // Get all modals and close buttons
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close');
 
+    // Loop through all modal buttons
     modalButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            const modalId = this.getAttribute("data-modal");
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.style.display = "block";
-            }
+        button.addEventListener('click', (e) => {
+            const targetModal = document.querySelector(`#${e.target.getAttribute('data-target')}`);
+            targetModal.classList.add('active'); // Show the modal
         });
     });
 
+    // Loop through all close buttons
     closeButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            this.closest(".modal").style.display = "none";
-        });
-    });
-
-    window.addEventListener("click", function (event) {
-        modals.forEach(modal => {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
+        button.addEventListener('click', (e) => {
+            const modal = e.target.closest('.modal');
+            modal.classList.remove('active'); // Close the modal
         });
     });
 });

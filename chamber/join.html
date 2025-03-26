@@ -101,51 +101,56 @@
                 <ul>
                     <li>
                         <strong>Non-Profit:</strong> Community events and networking.
-                        <button class="modal-button" data-modal="modal-np">More Info</button>
-                        <div id="modal-np" class="modal">
-                            <div class="modal-content">
-                                <span class="close" data-modal="modal-np">&times;</span>
-                                <h4>Non-Profit Membership</h4>
-                                <p>Enjoy community events and expand your network with like-minded individuals.</p>
-                            </div>
-                        </div>
+                        <button class="modal-button" data-target="non-profit-modal">More Info</button>
                     </li>
                     <li>
                         <strong>Bronze:</strong> All NP benefits + Free basic training.
-                        <button class="modal-button" data-modal="modal-bronze">More Info</button>
-                        <div id="modal-bronze" class="modal">
-                            <div class="modal-content">
-                                <span class="close" data-modal="modal-bronze">&times;</span>
-                                <h4>Bronze Membership</h4>
-                                <p>Includes all Non-Profit benefits plus access to free basic training.</p>
-                            </div>
-                        </div>
+                        <button class="modal-button" data-target="bronze-modal">More Info</button>
                     </li>
                     <li>
                         <strong>Silver:</strong> All Bronze benefits + Advertising opportunities.
-                        <button class="modal-button" data-modal="modal-silver">More Info</button>
-                        <div id="modal-silver" class="modal">
-                            <div class="modal-content">
-                                <span class="close" data-modal="modal-silver">&times;</span>
-                                <h4>Silver Membership</h4>
-                                <p>Enjoy all Bronze benefits plus exclusive advertising opportunities.</p>
-                            </div>
-                        </div>
+                        <button class="modal-button" data-target="silver-modal">More Info</button>
                     </li>
                     <li>
                         <strong>Gold:</strong> All Silver benefits + Exclusive VIP events.
-                        <button class="modal-button" data-modal="modal-gold">More Info</button>
-                        <div id="modal-gold" class="modal">
-                            <div class="modal-content">
-                                <span class="close" data-modal="modal-gold">&times;</span>
-                                <h4>Gold Membership</h4>
-                                <p>Includes all Silver benefits plus access to exclusive VIP events.</p>
-                            </div>
-                        </div>
+                        <button class="modal-button" data-target="gold-modal">More Info</button>
                     </li>
                 </ul>
             </aside>
-        </section>
+            
+            <!-- Modals -->
+            <div id="non-profit-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Non-Profit Benefits</h2>
+                    <p>As a Non-Profit member, you'll have the opportunity to participate in community events and networking. You'll be part of a supportive environment where you can share your organization's mission, collaborate with other like-minded individuals, and connect with potential partners.</p>
+                </div>
+            </div>
+            
+            <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Bronze Benefits</h2>
+                    <p>The Bronze membership level offers everything from the Non-Profit membership, plus access to free basic training. This includes workshops and educational resources to help enhance your skills and knowledge.</p>
+                </div>
+            </div>
+            
+            <div id="silver-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Silver Benefits</h2>
+                    <p>Silver members enjoy all the benefits of the Bronze membership, with the addition of exclusive advertising opportunities. You'll be able to promote your organization or services to a wider audience, gaining visibility through our platform.</p>
+                </div>
+            </div>
+            
+            <div id="gold-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Gold Benefits</h2>
+                    <p>Gold members receive all Silver benefits and more, including invitations to exclusive VIP events. These events provide opportunities for direct interaction with industry leaders, influencers, and potential collaborators.</p>
+                </div>
+            </div>
+            
     </main>
     <footer>
         <div class="footer-info">
@@ -155,9 +160,9 @@
             <p>Phone: (11) 1245-6789</p>
         </div>
         <div class="social-links">
-            <a href="#"><img src="images/Threads__app_.webp" alt="Threads"  loading="lazy"></a>
-            <a href="#"><img src="images/Instagram_logo_2022.svg_11zon.webp" alt="Instagram" loading="lazy"></a>
-            <a href="#"><img src="images/Facebook_logo.webp" alt="Facebook" loading="lazy"></a>
+            <a href="#"><img src="images/threads-app.webp" alt="Threads"  loading="lazy"></a>
+            <a href="#"><img src="images/instagram-logo.webp" alt="Instagram" loading="lazy"></a>
+            <a href="#"><img src="images/facebook-logo.webp" alt="Facebook" loading="lazy"></a>
         </div>
         <div class="project-info">
             <p>WDD231 Class Project</p>
