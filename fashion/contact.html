@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fashion Shopping Website">
+    <title>Join Fashion Shopping</title>
+    <meta name="author" content="Julian D. Martinez Peñaloza">
+    <meta property="og:title" content="Join Fashion Shopping">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julianmp09.github.io/wdd231/chamber/images/industrial-favicon-1.webp">
+    <meta property="og:url" content="https://julianmp09.github.io/wdd231/chamber/directory">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-template.css">
+    <link rel="stylesheet" href="styles/desktop-template.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+    <script src="scripts/membership-benefits.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Fashion Shopping logo">
+                <h2 class="title-logo">Fashion Shopping</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catelogue.html">Catelogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="join-us">
+            <div class="form-container">
+                <h1>Join Fashion Shopping Community</h1>
+                <form action="thankyou.html" method="get">
+                    <!-- Applicant First Name -->
+                    <label for="first-name">First Name (required):
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+
+                    <!-- Applicant Last Name -->
+                    <label for="last-name">Last Name (required):
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+
+                    <!-- Zip code -->
+                    <label for="zipcode">Zip code:
+                        <input type="text" id="zipcode" name="zipcode"  required>
+                    </label>
+
+                    <!-- Email Address -->
+                    <label for="email">Email (required):
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <!-- Phone Number -->
+                    <label for="phone">Mobile Phone (required):
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+
+                    <!-- Country where you live Name -->
+                    <label for="country">Country where you live (required):
+                        <input type="text" id="country" name="country" required>
+                    </label>                    
+
+                    <!-- City where you live Name -->
+                    <label for="city">City where you live (required):
+                        <input type="text" id="city" name="city" required>
+                    </label>
+
+                    <!-- Address Name -->
+                    <label for="address">Address (required):
+                        <input type="text" id="address" name="address" required>
+                    </label>
+
+                    <!-- Membership Level -->
+                    <fieldset>
+                        <legend>What are you interested in (choose one)?</legend>
+                        <label><input type="radio" name="membership" value="Men's clothing" required>Men's clothing</label>
+                        <label><input type="radio" name="membership" value="Women's clothing">Women's clothing</label>
+                        <label><input type="radio" name="membership" value="Children's clothing">Children's clothing</label>
+                        <label><input type="radio" name="membership" value="Accessories">Accessories</label>
+                    </fieldset>
+
+                    <!-- Terms and conditions Description -->
+                    <label for="terms">I accept the terms and conditions</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    
+
+                    <!-- Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <aside class="membership-benefits">
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>
+                        <strong>Men's:</strong> Exclusive clothing for our male members.
+                        <button class="modal-button" data-target="mens-modal">More Info</button>
+                    </li>
+                    <li>
+                        <strong>Women's:</strong> Exclusive clothing for our women members.
+                        <button class="modal-button" data-target="women-modal">More Info</button>
+                    </li>
+                    <li>
+                        <strong>Children's:</strong> Exclusive clothing for our members who have children.
+                        <button class="modal-button" data-target="children-modal">More Info</button>
+                    </li>
+                    <li>
+                        <strong>Accessories:</strong> Exclusive accessories for our members.
+                        <button class="modal-button" data-target="accessories-modal">More Info</button>
+                    </li>
+                </ul>
+            </aside>
+            
+            <!-- Modals -->
+            <div id="mens-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Men's clothing Benefits</h2>
+                    <p>Explore our selection of men’s clothing from top brands like H&M, Levi’s, Lacoste, and Obey. From comfortable essentials to iconic pieces that define your style, we offer casual, sporty, and elegant options. Our collection guarantees quality, comfort, and modern design for every occasion.</p>
+                </div>
+            </div>
+            
+            <div id="women-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Women's clothing Benefits</h2>
+                    <p>Refresh your wardrobe with exclusive pieces from H&M, Levi’s, Lacoste, and Obey. Designed for women who seek fashion, comfort, and versatility, our collection includes everything from classic jeans to urban and sophisticated outfits. Each piece enhances your unique style and personality.</p>
+                </div>
+            </div>
+            
+            <div id="children-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Children's clothing</h2>
+                    <p>Fashion is also for the little ones! Discover children's clothing from H&M and Levi’s, designed for comfort, durability, and style. Made with soft and resistant fabrics, our clothes allow kids to move freely while playing and exploring the world.</p>
+                </div>
+            </div>
+            
+            <div id="accessories-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Accessories</h2>
+                    <p>Complete your outfit with accessories from Lacoste, Obey, H&M, and Levi’s. From caps and bags to belts and sunglasses, every detail is designed to add a touch of elegance and authenticity to your style.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>FASHION</p>
+            <p>Complete your style with awesome clothes from us.</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/threads-app.webp" alt="Threads"  loading="lazy"></a>
+            <a href="#"><img src="images/instagram-logo.webp" alt="Instagram" loading="lazy"></a>
+            <a href="#"><img src="images/facebook-logo.webp" alt="Facebook" loading="lazy"></a>
+        </div>
+        <div class="project-info">
+            <p>All rights reserved.</p>
+            <p>Julian D. Martinez Peñaloza</p>
+        </div>
+    </footer>
+
+</body>
+</html>

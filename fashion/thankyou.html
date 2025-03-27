@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fashion Shopping Website">
+    <title>Thank You Fashion Shopping</title>
+    <meta name="author" content="Julian D. Martinez Peñaloza">
+    <meta property="og:title" content="Fashion Shopping Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://julianmp09.github.io/wdd231/chamber/images/industrial-favicon-1.webp">
+    <meta property="og:url" content="https://julianmp09.github.io/wdd231/chamber/directory">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile-template.css">
+    <link rel="stylesheet" href="styles/desktop-template.css">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/show-form-data.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Fashion Shopping logo">
+                <h2 class="title-logo">Fashion Shopping</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catelogue.html">Catelogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <button></button>
+            </div>
+        </div>
+    </header>
+    <main class="thank-you-container">
+        <div class="container">
+            <section class="thank-you-message">
+                <h2>Thank You, <span id="user-name">Guest</span>!</h2>
+                <p>Your form has been successfully submitted. Here is your information:</p>
+                <ul>
+                    <li><strong>First Name:</strong> <span id="first-name"></span></li>
+                    <li><strong>Last Name:</strong> <span id="last-name"></span></li>
+                    <li><strong>Email:</strong> <span id="email"></span></li>
+                    <li><strong>Phone:</strong> <span id="phone"></span></li>
+                    <li><strong>Country:</strong> <span id="country"></span></li>
+                    <li><strong>City:</strong> <span id="city"></span></li>
+                    <li><strong>Zip-code:</strong> <span id="zipcode"></span></li>
+                    <li><strong>Address:</strong> <span id="address"></span></li>
+                    <li><strong>Purchase interest:</strong> <span id="membership"></span></li>
+                    <li><strong>Submitted On:</strong> <span id="timestamp"></span></li>
+                </ul>
+                <a href="index.html" class="button">Return to Home</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>FASHION</p>
+            <p>Complete your style with awesome clothes from us.</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/threads-app.webp" alt="Threads"  loading="lazy"></a>
+            <a href="#"><img src="images/instagram-logo.webp" alt="Instagram" loading="lazy"></a>
+            <a href="#"><img src="images/facebook-logo.webp" alt="Facebook" loading="lazy"></a>
+        </div>
+        <div class="project-info">
+            <p>All rights reserved.</p>
+            <p>Julian D. Martinez Peñaloza</p>
+        </div>
+    </footer>
+
+</body>
+</html>

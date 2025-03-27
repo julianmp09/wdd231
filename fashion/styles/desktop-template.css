@@ -31,18 +31,46 @@
         margin-top: 10px;
     }
 
+    .women-dancing{
+        width: 300px;
+    }
+
     /*Home Page*/
+
+    .hero {
+        height: 300px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+        padding: 1rem;
+    }
+
+    .hero .cta-button {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .hero .cta-button:hover {
+        background: #575757;
+    }
+
     .info {
         flex-direction: row; 
         justify-content: space-around;
     }
 
     .info .events,
-    .info .weather{
+    .info .arrivals{
         width: 30%; 
     }
 
-    .weather{
+    .arrivals{
         text-align: center;
     }
 
@@ -72,6 +100,12 @@
         display: none;
     }
 
+    /* section community */
+
+    .community-title{
+        text-align: center;
+        font-size: 55px;
+    }
 
     /*Join page*/
 

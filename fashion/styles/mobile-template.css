@@ -32,7 +32,7 @@ h3{
 
 
 .women-dancing{
-    width: 300px;
+    width: 200px;
 }
 
 
@@ -106,7 +106,6 @@ header .hamburger-menu button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
     padding: 1rem;
 }
 
@@ -151,7 +150,7 @@ header .hamburger-menu button {
     padding: 20px 0;
 }
 
-.info .weather{
+.info .arrivals{
     background: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -166,7 +165,7 @@ header .hamburger-menu button {
     height: 600px;
 }
 
-/* Comienzo de la section community */
+/* section community */
 .community{
     height: 600px;
     background-color: #E6C744;
@@ -184,7 +183,7 @@ header .hamburger-menu button {
 
 .community-title{
     text-align: center;
-    font-size: 55px;
+    font-size: 28px;
 }
 
 .community-subtitle{
@@ -199,13 +198,13 @@ header .hamburger-menu button {
     border-radius: 5px;
 }
 
-.weather {
+.arrivals {
     background-color: #f0f8ff;
     padding: 1em;
     border-radius: 8px;
 }
 
-.weather h2 {
+.arrivals h2 {
     margin-bottom: 0.5em;
 }
 
@@ -279,98 +278,6 @@ nav.main-nav ul {
 
 nav.main-nav ul li {
     padding: 10px 0;
-}
-
-
-
-/* Directory Section Page*/
-.directory {
-    padding: 2rem;
-}
-
-.view-toggle {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-#members-container.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-}
-
-#grid-view, #list-view {
-    width: auto;
-    height: 3rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    transition: all ease-in-out 0.3s;
-}
-
-#grid-view:hover, #list-view:hover{
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-}
-
-#members-container.list-view {
-    display: block;
-}
-
-.member {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.member img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.member h3 {
-    margin: 0.5rem 0;
-}
-
-.member p {
-    margin: 0.25rem 0;
-}
-
-.member .membership {
-    display: inline-block;
-    padding: 0.5rem;
-    background: #3B4D61;
-    color: white;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
-
-
-/* featured members section */
-.featured-members {
-    background-color: #fff;
-    padding: 1em;
-    border-radius: 8px;
-}
-
-.member-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-.member-card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 0.5em;
 }
 
 /* join styles */
@@ -637,7 +544,7 @@ form button:hover {
 }
 
 
-
+/* Thank you page */
 
 .thank-you-container {
     display: flex;
