@@ -628,6 +628,117 @@ form button:hover {
     margin-top: 15px;
 }
 
+/* Catalogue page */
+.title-catalogue{
+    text-align: center;
+}
+
+/* Contenedor principal */
+#productContainer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Contenedor de las tarjetas de los productos */
+.divCardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Estilo de cada tarjeta de producto */
+.divCard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Efecto hover de la tarjeta */
+.divCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.divCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
+}
+
+/* Nombre del producto */
+.divCard h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Descripción del producto */
+.p-card {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/* Precio del producto */
+.p-card.price {
+    font-size: 1.2rem;
+    color: #2ecc71;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Botón de compra */
+.boton-card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.boton-card:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mensaje de error */
+.error-msg {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 
 
 /* Hover effect (non-mobile) */
