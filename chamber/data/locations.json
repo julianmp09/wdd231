@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Grido Ice Cream Shop",
+        "image": "images/grido.webp",
+        "address": "123 Evergreen Ave, City",
+        "description": "Popular ice cream shop with a variety of flavors.",
+        "alt": "Grido Ice Cream Shop"
+    },
+    {
+        "title": "Moda en Casa Electronic Shop",
+        "image": "./images/moda-en-casa.webp",
+        "address": "456 Tech Street, City",
+        "description": "Electronics and home appliances store.",
+        "alt": "Moda en Casa Electronic Shop"
+    },
+    {
+        "title": "Pasta America Factory",
+        "image": "./images/pasta_americana.webp",
+        "address": "Route 32, Industrial Park",
+        "description": "Artisanal pasta factory with national distribution.",
+        "alt": "PASTA-AMERICANA"
+    },
+    {
+        "title": "Santa Clara de Asís Parish",
+        "image": "./images/parroquia-santa-clara-de-asis-domselaar.webp",
+        "address": "Main Square, Domselaar",
+        "description": "Historic church with impressive architecture.",
+        "alt": "Santa Clara de Asís Parish, Domselaar"
+    },
+    {
+        "title": "Guerrero Castle",
+        "image": "./images/warrior-castle.webp",
+        "address": "Route 3, Province",
+        "description": "Iconic castle with colonial history.",
+        "alt": "warrior-castle"
+    },
+    {
+        "title": "Town of Domselaar",
+        "image": "./images/domselaar-peace.webp",
+        "address": "Downtown Domselaar",
+        "description": "Peaceful town with tree-lined streets and old houses.",
+        "alt": "domselaar"
+    },
+    {
+        "title": "Central Park Plaza",
+        "image": "./images/central-park.webp",
+        "address": "789 Central Ave, City",
+        "description": "Beautiful park with green spaces and recreational areas.",
+        "alt": "Central Park Plaza"
+    },
+    {
+        "title": "Local History Museum",
+        "image": "./images/museum-history.webp",
+        "address": "101 History Street, City",
+        "description": "Museum featuring exhibitions on regional history.",
+        "alt": "Local History Museum"
+    }
+]
