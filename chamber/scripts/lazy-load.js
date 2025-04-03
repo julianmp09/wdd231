@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".photo-grid");
 
     const removeBlur = (image) => {
-        image.classList.remove("lazy"); // Elimina la clase 'lazy'
+        image.classList.remove("lazy"); // remove class 'lazy'
     };
 
     const observeImages = () => {

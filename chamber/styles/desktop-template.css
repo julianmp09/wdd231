@@ -128,16 +128,16 @@
     
     .photo-grid address {
         font-style: normal;
-        color: #777;
+        color: black;
     }
     
     .photo-grid p {
         font-size: 0.9rem;
-        color: #555;
+        color: black;
     }
     
     .learn-more {
-        background: #007BFF;
+        background: black;
         color: white;
         padding: 10px;
         border: none;
@@ -147,7 +147,8 @@
     }
     
     .learn-more:hover {
-        background: #0056b3;
+        background: 
+        #34495e;
     }
 
     footer{
