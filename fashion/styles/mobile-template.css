@@ -131,21 +131,20 @@ header .hamburger-menu button {
     background-color: #E6C744;
 }
 
-.flex-img{
+.flex-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
     gap: 10px;
-    mix-blend-mode: multiply;  /* mix-blend-mode: multiply; causes the white in the image to become transparent when combined with the dark background. */
+    mix-blend-mode: multiply; /* hace que el blanco sea transparente con fondo oscuro */
 }
 
 .flex-img > img {
     max-width: 100%;
     height: auto;
-    flex: 1 1 1; /* Adjusts the minimum size of the elements */
-    object-fit: contain; /* maintains the proportion of the images*/
+    object-fit: contain;
 }
 
 .info {
