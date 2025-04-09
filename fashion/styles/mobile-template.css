@@ -138,7 +138,7 @@ header .hamburger-menu button {
     align-items: center;
     padding: 1.5rem;
     gap: 10px;
-    mix-blend-mode: multiply; /* hace que el blanco sea transparente con fondo oscuro */
+    mix-blend-mode: multiply; /* makes white transparent with dark background */
 }
 
 .flex-img > img {
